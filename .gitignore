@@ -1,2 +1,4 @@
 tools
 projects/*
+
+!projects/00
