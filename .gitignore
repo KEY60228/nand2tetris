@@ -7,3 +7,8 @@ projects/*
 projects/01/*.tst
 projects/01/*.cmp
 projects/01/*.out
+
+!projects/02
+projects/02/*.tst
+projects/02/*.cmp
+projects/02/*.out
