@@ -12,3 +12,8 @@ projects/01/*.out
 projects/02/*.tst
 projects/02/*.cmp
 projects/02/*.out
+
+!projects/03
+projects/03/**/*.tst
+projects/03/**/*.cmp
+projects/03/**/*.out
