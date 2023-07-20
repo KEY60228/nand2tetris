@@ -14,4 +14,21 @@ CHIP FullAdder {
 
     PARTS:
     // Put you code here:
+    Nand(a=a, b=b, out=c1);
+    Nand(a=a, b=c1, out=c2);
+    Nand(a=b, b=c1, out=c3);
+    Nand(a=c2, b=c3, out=absum);
+    Nand(a=a, b=b, out=d1);
+    Nand(a=d1, b=d1, out=abcarry);
+
+    Nand(a=c, b=absum, out=e1);
+    Nand(a=c, b=e1, out=e2);
+    Nand(a=absum, b=e1, out=e3);
+    Nand(a=e2, b=e3, out=sum);
+    Nand(a=c, b=absum, out=f1);
+    Nand(a=f1, b=f1, out=abccarry);
+
+    Nand(a=abcarry, b=abcarry, out=g1);
+    Nand(a=abccarry, b=abccarry, out=g2);
+    Nand(a=g1, b=g2, out=carry);
 }
