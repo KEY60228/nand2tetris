@@ -17,3 +17,9 @@ projects/02/*.out
 projects/03/**/*.tst
 projects/03/**/*.cmp
 projects/03/**/*.out
+
+!projects/04
+projects/04/**/*.tst
+projects/04/**/*.cmp
+projects/04/**/*.out
+projects/04/**/*.hack
